@@ -4,6 +4,9 @@ var wrap = document.querySelector('.wrap');
 var A = document.getElementById('seccionA');
 var B = document.getElementById('seccionB');
 var C = document.getElementById('seccionC');
+var proximamente = document.querySelector('.contenedor-proximamente');
+var grado = document.querySelector('.grado')
+var final = document.querySelector('.final')
 
 
 
@@ -19,16 +22,26 @@ boton.addEventListener('click', (event) =>{
      
     if(informacion === 'seccion1'){
         wrap.style.display = 'none';
+        proximamente.style.display = 'none';
+       
+        
+        final.style.display = 'none';
         A.style.display = 'block'
     
     }
     if(informacion === 'seccion2'){
         wrap.style.display = 'none';
+        proximamente.style.display = 'none';
+        
+        final.style.display = 'none';
         B.style.display = 'block'
 
     }
     if(informacion === 'seccion3'){
         wrap.style.display = 'none';
+        proximamente.style.display = 'none';
+        
+        final.style.display = 'none';
         C.style.display = 'block'
 
     }
