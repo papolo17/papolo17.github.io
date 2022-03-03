@@ -1,0 +1,119 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e31;
+    position: fixed;
+    width: 110vw;
+    height: 200vh;
+    z-index: 9999;
+    transition: all 1.5s;
+    margin-top: -50px;
+    
+  }
+  .loader,
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation: loader 1.5s infinite ease-in-out;
+  }
+  .loader {
+    color: #24A19c;
+    font-size: 13px;
+    position: relative;
+    animation-delay: -0.16s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -500px;
+  }
+  .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  .loader:before {
+    left: -3.5rem;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 3.5em;
+  }
+  @keyframes loader {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+      box-shadow: 0 2.5em 0 0;
+    }
+  }
+  /*============= portada*/
+
+.portada{
+    width: 100%;
+    height: 80px;
+    background: #24A19c;
+    margin-top: -10px;
+    
+    box-shadow: 0 1px 6px 0 var(--blanco)
+
+}
+.portada h4{
+    color: white;
+    display: flex;
+    margin-right: 80px;
+    
+    
+}
+.portada h2{
+    color: white;
+    font-weight: 700;
+}
+
+/* animacin de letras*/
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+span{
+	display: block;
+	font-family: monospace;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 15ch;
+	animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+	overflow: hidden;
+    color: white;
+
+}
+
+@keyframes typing {
+	from {width: 0;}
+}
+
+@keyframes blink {
+	50%{border-color: transparent;}
+}
+section p{
+    color: white;
+    border-bottom: 1px solid #ccc
+}
+i{
+    color: white;
+}
+
+.final{
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.final p{
+    padding: 4px;
+}

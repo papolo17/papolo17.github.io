@@ -6,24 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carga.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="contenedor">
+        <div class="loader"></div>
+    </div>
+    <header class="portada">
+        <h4>San Ramon</h4>
+        <h2>11°vo</h2>
+    </header>
     <header>
-        <div class="hero">
-            <div class="portada">
-                <div class="imagen">
-                    <img src="img/Banner Miembros_Grafica.png" alt="">
+        <div class="wrap">
+		
+            <form action="" class="formulario">
+                <div class="radio">
+                    <h2>Secciones 11vo</h2>
+                    <input type="radio" value="seccion1"  name="secciones"  id="seccio1" class="valores">
+                    <label for="seccio1">A</label>
+            
+                    <input type="radio" value="seccion2"  name="secciones"  id="seccio2" class="valores">
+                    <label for="seccio2">B</label>
+            
+                    <input type="radio" value="seccion3"  name="secciones"  id="seccio3" class="valores">
+                    <label for="seccio3">C</label>
                 </div>
-                <div class="title">
-                    <h2>Proximamente</h2>
-                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet.</p>
+                <div class="enviar">
+                    <button type="button" id="boton">Siguiente →</button>
+    
                 </div>
+            </form>
+        </div>
+        <div class="grado">
+            <div id="seccionA" class="color">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKOx6odT7GKxKpGEN5iRREiqRPcKqJcpc6CPWwf4DpwWXzmA/viewform?usp=sf_link">11°A</a>
+            </div>
+            <div id="seccionB" class="color">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkZunjoGhO4f9Ia2ps7bNiRHdh2IOZO9E89ROnnoDJF2rwBw/viewform?usp=sf_link">11°B</a>
+            </div>
+            <div id="seccionC" class="color">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScBebCcakeGj7gUrR1Wc_Lb_G2PXF_zW4Swjw5rZIn1qoPDSA/viewform?usp=sf_link">11°C</a>
             </div>
         </div>
     </header>
-<script src="main.js"></script>
+    <section>
+       <div class="contenedor-proximamente">
+           <div class="titulo">
+            <h1><span>Proximamente</span></h1>
+           </div>
+           <div class="imagen">
+               <img src="img/ejemplo-de-encuesta-imagen.png" alt="" width="100%">
+           </div>
+           <p>Los resultados de la escuesta social, estarn prevista en.....<i>05/03/22</i></p>
+           
+       </div>
+    </section>
+    <div class="final">
+        <p>®Kevin Ramirez Miembro del 11°vo C</p>
+    <p>Miembro del 11°vo C</p>
+    <p>Telef. +505 83250535</p>
+    <p>Gracias por su tiempo..</p>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

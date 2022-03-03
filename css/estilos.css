@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --fondo-background: #373B44;
+  --principal-background: #4286f4;
+  --blanco: white;
+  --fondo-mas-oscuro: #4286f467;
+  --seccio-A: #b92b27;
+  --seccio-B: #52c234;
+  --seccio-C: #1FA2FF;
+  --barra-azul-background: hsl(204, 70%, 63%);
+    --barra-verde-background: hsl(145, 61%, 80%);
+    --color-pagina-background: #141e30;
+    --barra-border: hsl(204, 8%, 90%);
+}
+body{
+  background: var(--fondo-background);
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 var(--blanco);
+  transition: 0.3s;
+  width: 300px;
+  margin: 10px;
+    
+}
+.radio h2{
+    margin: 45px;
+    color: var(--blanco);
+}
+.enviar{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: -30px;
+   
+    
+}
+.enviar button{
+    border: none;
+    border-radius: 10px;
+    background: none;
+    width: 120px;
+    height: 30px;
+    color: var(--principal-background);
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.enviar button:hover{
+    background: var(--principal-background);
+    height: 30px;
+    width: 120px;
+    color: var(--blanco);
+    transition: all ease 1s;
+}
+.grado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 250px;
+    
+}
+.grado a {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 33px;
+    text-decoration: none;
+    color: var(--blanco);
+}
+.formulario > div {
+    padding: 20px 0;
+     }
+  .formulario .radio label,
+  .formulario .checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    color: var(--principal-background);
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .formulario .radio label:hover,
+    .formulario .checkbox label:hover {
+      background: var(--fondo-mas-oscuro); }
+    .formulario .radio label:before,
+    .formulario .checkbox label:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: none;
+      border: 3px solid var(--principal-background); }
+  .formulario input[type="radio"] {
+    display: none; }
+    .formulario input[type="radio"]:checked + label:before {
+      display: none; }
+    .formulario input[type="radio"]:checked + label {
+      padding: 5px 15px;
+      background: var(--principal-background);
+      border-radius: 2px;
+      color: var(--blanco); }
+
+
+
+      /*=====================================================
+      ==================formularios========================*/
+      #seccionA{
+          display: none;
+          width: 100px;
+          height: 90px;
+          background: var(--seccio-A);
+          border-radius: 10px;
+          box-shadow: 0 1px 6px 0 var(--blanco)
+
+          
+      }
+      #seccionB{
+        display: none;
+        width: 100px;
+          height: 90px;
+          background: var(--seccio-B);
+          border-radius: 10px;
+          box-shadow: 0 1px 6px 0 var(--blanco);
+
+    }
+    #seccionC{
+        display: none;
+        width: 100px;
+          height: 90px;
+          background: var(--seccio-C);
+          border-radius: 10px;
+          box-shadow: 0 1px 6px 0 var(--blanco);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  
+}
